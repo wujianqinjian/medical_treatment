@@ -27,7 +27,7 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
-    <div>This is test ！</div>
+    <div>医疗测试项目初始化 ！</div>
   </div>
 
 </template>
