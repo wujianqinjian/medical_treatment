@@ -27,7 +27,7 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
-    <div>医疗测试项目初始化 ！</div>
+    <div>用来练习测试技能的前端项目！</div>
   </div>
 
 </template>
