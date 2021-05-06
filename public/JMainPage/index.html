@@ -5,33 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--    <link rel="icon" href="<%= BASE_URL %>favicon.ico">-->
-    <link rel="icon" href="wujianqinjian.png">
+    <link rel="icon" href="../wujianqinjian.png">
     <!-- 引入样式 -->
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <!--引入vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12" type="text/javascript"></script>
     <!-- 引入组件库 -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>医院首页</title>
   </head>
   <body>
     <div id="mainpagetop">
         <el-row>
             <el-col :span="24">
                 <div class="grid-content bg-purple-dark">
-                    <div id="pageTopTitle" v-bind:class="color">医疗项目首页</div>
+                    <div id="pageTopTitle" v-bind:class="color">性能测试医疗项目首页</div>
                 </div>
             </el-col>
         </el-row>
     </div>
     <div id="medicalmainmenu">
         <p></p>
-        <button style="margin-right: 40px;height: 80px;width:180px" >{{ artificialRegistration }}</button>
-        <button style="margin-right: 40px;height: 80px;width:180px">{{ onlineRegistration}}</button>
-        <button style="margin-right: 40px;height: 80px;width:180px">{{ ownRegistration }}</button>
+        <button style="margin-right: 40px;height: 80px;width:180px" >{{ hospitalGuide }}</button>
+        <button style="margin-right: 40px;height: 80px;width:180px">{{ diagnosisAndTreat }}</button>
+        <button style="margin-right: 40px;height: 80px;width:180px">{{ interaction }}</button>
     </div>
     <div id="logoimage">
-        <img src="wujianqinjian.png">
+        <img src="../wujianqinjian.png">
     </div>
 
   </body>
@@ -46,10 +46,9 @@
           el : '#medicalmainmenu',
           data:
               {
-               artificialRegistration:'智能挂号',
-               onlineRegistration:'预约挂号',
-               ownRegistration:'我的挂号',
-               mainPage:'主页',
+                  hospitalGuide:'导诊',
+                  diagnosisAndTreat:'诊疗',
+                  interaction:'互动'
               }
       });
   var propertyTest=new Vue({
