@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
+  <body >
     <div id="mainpagetop">
         <el-row>
             <el-col :span="24">
@@ -37,37 +37,37 @@
   </body>
   <script>
       var uMessageName = {name:'fanrui'}
-  var vm=new Vue({
-          el : '#app',
-          data :
-              {
-                  banshee : "报丧女妖"
-              },
-          el : '#medicalmainmenu',
+      var vm=new Vue({
+              el : '#app',
+              data :
+                  {
+                      banshee : "报丧女妖"
+                  },
+              el : '#medicalmainmenu',
+              data:
+                  {
+                   artificialRegistration:'智能挂号',
+                   onlineRegistration:'预约挂号',
+                   ownRegistration:'我的挂号',
+                   mainPage:'主页',
+                  }
+          });
+      var propertyTest=new Vue({
+          el: '#newtest',
           data:
               {
-               artificialRegistration:'智能挂号',
-               onlineRegistration:'预约挂号',
-               ownRegistration:'我的挂号',
-               mainPage:'主页',
-              }
+              color:'test1'
+          }
       });
-  var propertyTest=new Vue({
-      el: '#newtest',
-      data:
-          {
-          color:'test1'
-      }
-  });
-  var pageTop=new Vue({
-     el:'#pageTopTitle',
-     data:
-         {
-         color:'pagetitlecolor'
-     }
-  })
+      var pageTop=new Vue({
+         el:'#pageTopTitle',
+         data:
+             {
+             color:'pagetitlecolor'
+         }
+      })
 
-  vm.$data.artificalRegistration="test"
+      vm.$data.artificalRegistration="test"
   </script>
   <style type="text/css">
       #logoimage{color: green;height: 600px;width: 500px;margin-left: 35%;margin-top: 50px}

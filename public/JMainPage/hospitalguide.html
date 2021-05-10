@@ -27,9 +27,9 @@
     </div>
     <div id="medicalmainmenu">
         <p></p>
-        <button style="margin-right: 40px;height: 80px;width:180px" >{{ artificialRegistration }}</button>
-        <button style="margin-right: 40px;height: 80px;width:180px">{{ onlineRegistration}}</button>
-        <button style="margin-right: 40px;height: 80px;width:180px">{{ ownRegistration }}</button>
+        <button class="mainMenuButton" >{{ artificialRegistration }}</button>
+        <button class="mainMenuButton" >{{ onlineRegistration}}</button>
+        <button class="mainMenuButton" >{{ ownRegistration }}</button>
     </div>
     <div id="logoimage">
         <img src="../wujianqinjian.png">
@@ -70,12 +70,14 @@
   vm.$data.artificalRegistration="test"
   </script>
   <style type="text/css">
-      #logoimage{color: green;height: 600px;width: 500px;margin-left: 35%;margin-top: 50px}
+      #logoimage{color: green;height: 600px;width: 500px;margin: 0 auto;margin-top: 50px}
       #pageTopTitle{text-align:center;margin-top: 10px;padding-top: 5px}
       #medicalmainmenu{text-align:center;margin-top: 10px;padding-top: 5px;margin-right: 30px}
+      #all{background: black}
       test1{color: red}
       .blue{color : green}
       .pagetitlecolor{color: blue;font-size: 20px}
+      .mainMenuButton{margin-right: 40px;height: 80px;width:180px}
 
   </style>
 </html>
